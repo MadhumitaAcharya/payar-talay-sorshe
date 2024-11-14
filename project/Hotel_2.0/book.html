@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <style>
+    .goback-button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .goback-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Your website content goes here -->
+
+<!-- "Go back home" button -->
+<a href="home.html" class="goback-button">Home</a>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book - StayHub</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Stay</h1>
+  </header>
+  <div class="container">
+    <form action="http://localhost/project/booking.php" method="POST" class="booking-form">
+      <label for="check-in-date">Check-in Date:</label>
+      <input type="date" id="check-in-date" name="check-in-date" required>
+
+      <label for="check-out-date">Check-out Date:</label>
+      <input type="date" id="check-out-date" name="check-out-date" required>
+
+      <label for="room-type">Room Type:</label>
+      <select id="room-type" name="room-type" required>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+      </select>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>
